@@ -1,0 +1,11 @@
+2022-05-26 23:39:23 [TRC] main.go:22 | dddddddddddddddddddd
+2022-05-26 23:39:23 [TRC] main.go:23 | hello seelog trace, i = 0
+2022-05-26 23:39:23 [DBG] main.go:24 | aaaaaaaa %d1
+2022-05-26 23:39:23 [DBG] main.go:25 | hello seelog debug, i = 0
+2022-05-26 23:39:23 [INF] main.go:26 | hello seelog info, i = 0
+2022-05-26 23:39:23 [WRN] main.go:27 | hello seelog warn, i = 0
+2022-05-26 23:39:23 [ERR] main.go:28 | hello seelog error, i = 0
+2022-05-26 23:39:23 [CRT] main.go:20 | hello seelog critical, i = 0
+2022-05-26 23:39:23 [DBG] main.go:31 | seelog test end
+2022-06-04 12:35:54 [INF] main.go:21 | seelog test begin
+2022-06-04 12:35:54 [DBG] main.go:22 | seelog test end
