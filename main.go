@@ -4,8 +4,13 @@ import (
 	"flag"
 	"fmt"
 	log "github.com/cihub/seelog"
+	"github.com/gin-gonic/gin"
+	"myweb/controllers"
 	"myweb/models"
 	"myweb/system"
+	"os"
+	"path/filepath"
+	"strings"
 )
 
 func main() {
@@ -32,5 +37,17 @@ func main() {
 
 	/*	route:= gin.Default()
 		route.StaticFS()*/
+	gin.SetMode(gin.DebugMode)
+	router := gin.Default()
+	router.Static("/static", filepath.Join(getCurrentDirectory(), "./static"))
+	router.NoRoute(controllers.Handle404)
 
+}
+
+func getCurrentDirectory() string {
+	dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
+	if err != nil {
+		log.Critical(err)
+	}
+	return strings.Replace(dir, "\\", "/", -1)
 }

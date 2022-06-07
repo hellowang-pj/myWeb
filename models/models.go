@@ -12,9 +12,17 @@ type BaseModel struct {
 	UpdatedAt time.Time
 }
 
-var Db *gorm.DB
+var DB *gorm.DB
 
 func InitDB() (db *gorm.DB, err error) {
 	db, err = gorm.Open("sqlite3", "./database/weblog.db")
+	if err == nil {
+		DB = db
+		//db.LogMode(true)
+		//db.AutoMigrate(&Page{}, &Post{}, &Tag{}, &PostTag{}, &User{}, &Comment{}, &Subscriber{}, &Link{}, &SmmsFile{})
+		//db.Model(&PostTag{}).AddUniqueIndex("uk_post_tag", "post_id", "tag_id")
+		db.AutoMigrate()
+		return
+	}
 	return
 }
