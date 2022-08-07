@@ -9,3 +9,89 @@
 2022-05-26 23:39:23 [DBG] main.go:31 | seelog test end
 2022-06-04 12:35:54 [INF] main.go:21 | seelog test begin
 2022-06-04 12:35:54 [DBG] main.go:22 | seelog test end
+2022-07-31 16:34:21 [INF] main.go:24 | seelog test begin
+2022-07-31 16:34:21 [CRT] main.go:26 | err parsing config log fileopen conf/conf.yaml: The system cannot find the file specified.
+2022-07-31 16:36:19 [INF] main.go:24 | seelog test begin
+2022-07-31 16:36:19 [DBG] main.go:37 | seelog test end
+2022-08-05 22:24:54 [INF] main.go:29 | seelog test begin
+2022-08-05 22:24:54 [CRT] main.go:31 | err parsing config log fileopen conf/conf.yaml: The system cannot find the file specified.
+2022-08-05 22:25:20 [INF] main.go:29 | seelog test begin
+2022-08-05 22:25:20 [CRT] main.go:31 | err parsing config log fileopen ./conf/conf.yaml: The system cannot find the file specified.
+2022-08-05 22:25:35 [INF] main.go:29 | seelog test begin
+2022-08-05 22:25:35 [CRT] main.go:31 | err parsing config log fileopen ./conf/conf.yaml: The system cannot find the file specified.
+2022-08-05 22:30:06 [INF] main.go:29 | seelog test begin
+2022-08-05 22:30:06 [CRT] main.go:31 | err parsing config log fileopen myweb/conf/conf.yaml: The system cannot find the path specified.
+2022-08-05 22:30:23 [INF] main.go:29 | seelog test begin
+2022-08-05 22:30:23 [CRT] main.go:31 | err parsing config log fileopen 。/myweb/conf/conf.yaml: The system cannot find the path specified.
+2022-08-05 22:30:29 [INF] main.go:29 | seelog test begin
+2022-08-05 22:30:29 [CRT] main.go:31 | err parsing config log fileopen ./myweb/conf/conf.yaml: The system cannot find the path specified.
+2022-08-05 22:30:43 [INF] main.go:29 | seelog test begin
+2022-08-05 22:30:43 [CRT] main.go:31 | err parsing config log fileopen ./conf/conf.yaml: The system cannot find the file specified.
+2022-08-05 22:35:50 [INF] main.go:29 | seelog test begin
+2022-08-05 22:35:50 [CRT] main.go:31 | err parsing config log fileopen ./conf/conf.yaml: The system cannot find the file specified.
+2022-08-05 22:36:02 [INF] main.go:29 | seelog test begin
+2022-08-05 22:36:02 [CRT] main.go:31 | err parsing config log fileopen conf/conf.yaml: The system cannot find the file specified.
+2022-08-05 22:36:31 [INF] main.go:29 | seelog test begin
+2022-08-05 22:36:31 [CRT] main.go:31 | err parsing config log fileopen ./conf/conf.yaml: The system cannot find the file specified.
+2022-08-05 22:37:05 [INF] main.go:29 | seelog test begin
+2022-08-05 22:37:05 [CRT] main.go:31 | err parsing config log fileopen myweb/conf/conf.yaml: The system cannot find the path specified.
+2022-08-05 22:37:15 [INF] main.go:29 | seelog test begin
+2022-08-05 22:37:15 [CRT] main.go:31 | err parsing config log fileopen ./myweb/conf/conf.yaml: The system cannot find the path specified.
+2022-08-05 22:38:03 [INF] main.go:29 | seelog test begin
+2022-08-05 22:38:03 [DBG] main.go:40 | seelog test end
+2022-08-06 16:12:24 [INF] main.go:30 | seelog test begin
+2022-08-06 16:12:24 [DBG] main.go:41 | seelog test end
+2022-08-06 16:13:27 [INF] main.go:30 | seelog test begin
+2022-08-06 16:13:27 [DBG] main.go:41 | seelog test end
+2022-08-06 16:22:37 [INF] main.go:30 | seelog test begin
+2022-08-06 16:22:37 [DBG] main.go:41 | seelog test end
+2022-08-06 16:23:02 [INF] main.go:30 | seelog test begin
+2022-08-06 16:23:02 [DBG] main.go:41 | seelog test end
+2022-08-06 16:23:36 [INF] main.go:30 | seelog test begin
+2022-08-06 16:23:36 [DBG] main.go:41 | seelog test end
+2022-08-06 16:34:17 [INF] main.go:30 | seelog test begin
+2022-08-06 16:34:17 [DBG] main.go:41 | seelog test end
+2022-08-06 16:34:44 [INF] main.go:30 | seelog test begin
+2022-08-06 16:34:44 [DBG] main.go:41 | seelog test end
+2022-08-06 16:34:48 [INF] main.go:30 | seelog test begin
+2022-08-06 16:34:48 [DBG] main.go:41 | seelog test end
+2022-08-06 16:35:08 [INF] main.go:30 | seelog test begin
+2022-08-06 16:35:08 [DBG] main.go:41 | seelog test end
+2022-08-06 16:36:31 [INF] main.go:30 | seelog test begin
+2022-08-06 16:36:31 [DBG] main.go:41 | seelog test end
+2022-08-06 16:42:23 [INF] main.go:30 | seelog test begin
+2022-08-06 16:42:23 [DBG] main.go:41 | seelog test end
+2022-08-06 16:44:52 [INF] main.go:30 | seelog test begin
+2022-08-06 16:44:52 [DBG] main.go:41 | seelog test end
+2022-08-07 13:11:10 [INF] main.go:30 | seelog test begin
+2022-08-07 13:11:10 [DBG] main.go:41 | seelog test end
+2022-08-07 13:12:19 [INF] main.go:30 | seelog test begin
+2022-08-07 13:12:19 [DBG] main.go:41 | seelog test end
+2022-08-07 13:12:38 [INF] main.go:30 | seelog test begin
+2022-08-07 13:12:38 [DBG] main.go:41 | seelog test end
+2022-08-07 13:12:42 [INF] main.go:30 | seelog test begin
+2022-08-07 13:12:42 [DBG] main.go:41 | seelog test end
+2022-08-07 13:14:05 [INF] main.go:30 | seelog test begin
+2022-08-07 13:14:05 [DBG] main.go:41 | seelog test end
+2022-08-07 13:15:36 [INF] main.go:30 | seelog test begin
+2022-08-07 13:15:36 [DBG] main.go:41 | seelog test end
+2022-08-07 13:16:50 [INF] main.go:30 | seelog test begin
+2022-08-07 13:16:50 [DBG] main.go:41 | seelog test end
+2022-08-07 19:59:36 [INF] main.go:30 | seelog test begin
+2022-08-07 19:59:36 [DBG] main.go:41 | seelog test end
+2022-08-07 20:00:02 [INF] main.go:30 | seelog test begin
+2022-08-07 20:00:02 [DBG] main.go:41 | seelog test end
+2022-08-07 20:00:46 [INF] main.go:30 | seelog test begin
+2022-08-07 20:00:46 [DBG] main.go:41 | seelog test end
+2022-08-07 20:05:35 [INF] main.go:30 | seelog test begin
+2022-08-07 20:05:35 [DBG] main.go:41 | seelog test end
+2022-08-07 20:14:03 [INF] main.go:30 | seelog test begin
+2022-08-07 20:14:03 [DBG] main.go:41 | seelog test end
+2022-08-07 20:14:28 [INF] main.go:30 | seelog test begin
+2022-08-07 20:14:28 [DBG] main.go:41 | seelog test end
+2022-08-07 23:00:46 [INF] main.go:30 | seelog test begin
+2022-08-07 23:00:46 [DBG] main.go:41 | seelog test end
+2022-08-07 23:02:07 [INF] main.go:30 | seelog test begin
+2022-08-07 23:02:07 [DBG] main.go:41 | seelog test end
+2022-08-07 23:03:07 [INF] main.go:30 | seelog test begin
+2022-08-07 23:03:07 [DBG] main.go:41 | seelog test end

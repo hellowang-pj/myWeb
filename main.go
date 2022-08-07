@@ -8,6 +8,7 @@ import (
 	"myweb/controllers"
 	"myweb/models"
 	"myweb/system"
+	"net/http"
 	"os"
 	"path/filepath"
 	"strings"
@@ -37,11 +38,18 @@ func main() {
 
 	/*	route:= gin.Default()
 		route.StaticFS()*/
+	fmt.Println(filepath.Join(getCurrentDirectory()))
 	gin.SetMode(gin.DebugMode)
 	router := gin.Default()
-	router.Static("/static", filepath.Join(getCurrentDirectory(), "./static"))
+	//router.Static("/static", filepath.Join(getCurrentDirectory(),"./static"))
+	router.StaticFS("/static", http.Dir("./static"))
+	router.StaticFile("/favicon.ico", filepath.Join(getCurrentDirectory(), "./views/favicon.ico"))
 	router.NoRoute(controllers.Handle404)
+	router.GET("/ahaha", func(c *gin.Context) {
+		c.String(http.StatusOK, "Who are you?")
+	})
 
+	router.Run(":8090")
 }
 
 func getCurrentDirectory() string {
