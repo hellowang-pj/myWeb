@@ -7,7 +7,8 @@ import (
 )
 
 type Configuration struct {
-	sqliteConf string `yaml:"db"` //database
+	sqliteConf string `yaml:"db"`        //database
+	PageSize   int    `yaml:"page_size"` //page_size
 }
 
 const (

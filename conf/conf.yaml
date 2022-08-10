@@ -1,1 +1,2 @@
 db: ./database/weblog.db
+page_size: 5

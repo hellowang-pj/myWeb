@@ -5,10 +5,11 @@ import (
 	"fmt"
 	log "github.com/cihub/seelog"
 	"github.com/gin-gonic/gin"
+	"html/template"
 	"myweb/controllers"
+	"myweb/helpers"
 	"myweb/models"
 	"myweb/system"
-	"net/http"
 	"os"
 	"path/filepath"
 	"strings"
@@ -41,13 +42,13 @@ func main() {
 	fmt.Println(filepath.Join(getCurrentDirectory()))
 	gin.SetMode(gin.DebugMode)
 	router := gin.Default()
+	setTemplate(router)
+
 	//router.Static("/static", filepath.Join(getCurrentDirectory(),"./static"))
-	router.StaticFS("/static", http.Dir("./static"))
-	router.StaticFile("/favicon.ico", filepath.Join(getCurrentDirectory(), "./views/favicon.ico"))
+	router.Static("/static", filepath.Join(getCurrentDirectory(), "./static"))
+	//router.StaticFile("/favicon.ico", filepath.Join(getCurrentDirectory(), "./views/favicon.ico"))
 	router.NoRoute(controllers.Handle404)
-	router.GET("/ahaha", func(c *gin.Context) {
-		c.String(http.StatusOK, "Who are you?")
-	})
+	router.GET("/", controllers.IndexGet)
 
 	router.Run(":8090")
 }
@@ -58,4 +59,20 @@ func getCurrentDirectory() string {
 		log.Critical(err)
 	}
 	return strings.Replace(dir, "\\", "/", -1)
+}
+func setTemplate(engine *gin.Engine) {
+
+	funcMap := template.FuncMap{
+		"dateFormat": helpers.DateFormat,
+		"substring":  helpers.Substring,
+		"isOdd":      helpers.IsOdd,
+		"isEven":     helpers.IsEven,
+		"truncate":   helpers.Truncate,
+		"add":        helpers.Add,
+		"minus":      helpers.Minus,
+		"listtag":    helpers.ListTag,
+	}
+
+	engine.SetFuncMap(funcMap)
+	engine.LoadHTMLGlob(filepath.Join(getCurrentDirectory(), "./views/*/*"))
 }
